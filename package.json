@@ -1,0 +1,23 @@
+{
+  "name": "zz-buffer-dep-test",
+  "version": "0.0.0",
+  "description": "A dependency test for 'zz-buffer'",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "zz test",
+    "postinstall": "rm -f modules && ln -sf ./node_modules/ modules"
+  },
+  "keywords": [
+    "zz",
+    "buffer",
+    "test"
+  ],
+  "author": "Joseph Werle <joseph.werle@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "zz-buffer": "github:jwerle/zz-buffer"
+  }
+}

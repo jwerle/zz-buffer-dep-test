@@ -1,0 +1,13 @@
+using <stdio.h>::{printf};
+using zz_buffer::{ Buffer };
+
+export fn main() -> int {
+  let mut buffer = Buffer +5 { size: 5 };
+  u8 mut out[6];
+
+  //buf.write((u8 *) "h", 0, 1);
+
+  buffer.write((u8 *) "hello", 0, 5);
+  buffer.read(out, 0, 5);
+  printf("%s\n", out);
+}
